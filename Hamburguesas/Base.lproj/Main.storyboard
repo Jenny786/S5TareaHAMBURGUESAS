@@ -1,25 +1,107 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Las mejores Hamburguesas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClV-sB-Hlm">
+                                <rect key="frame" x="64" y="43" width="213" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pais: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rT-CA-v9N">
+                                <rect key="frame" x="56" y="145" width="43" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Uhf-6c-QXi"/>
+                                    <constraint firstAttribute="width" constant="43" id="haZ-Li-ayA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="......" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IoR-vq-i4T">
+                                <rect key="frame" x="45" y="174" width="250" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="eDz-MU-fTF"/>
+                                    <constraint firstAttribute="width" constant="250" id="eUa-fG-NlL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de la Haburguesa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wL5-on-wc2">
+                                <rect key="frame" x="51" y="274" width="238" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="efF-7U-NeX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYY-zA-QfX">
+                                <rect key="frame" x="45" y="321" width="250" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="L9x-01-oSG"/>
+                                    <constraint firstAttribute="height" constant="21" id="iS7-9z-Gyd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3v-k9-KnS">
+                                <rect key="frame" x="37" y="430" width="252" height="30"/>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.67843137254901964" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Quiero una Hamburguesa...!!!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="QuieroHamburguesa" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Oo-Hv-rtj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wL5-on-wc2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1gR-aV-oFm"/>
+                            <constraint firstItem="z3v-k9-KnS" firstAttribute="top" secondItem="LYY-zA-QfX" secondAttribute="bottom" constant="88" id="6ma-67-UNN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="z3v-k9-KnS" secondAttribute="bottom" constant="108" id="G7Q-hD-h0Y"/>
+                            <constraint firstItem="6rT-CA-v9N" firstAttribute="top" secondItem="ClV-sB-Hlm" secondAttribute="bottom" constant="81" id="HQf-Tc-IFx"/>
+                            <constraint firstItem="wL5-on-wc2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="HrA-tX-zMj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wL5-on-wc2" secondAttribute="trailing" constant="15" id="ICF-tP-M8L"/>
+                            <constraint firstItem="wL5-on-wc2" firstAttribute="top" secondItem="IoR-vq-i4T" secondAttribute="bottom" constant="79" id="Lar-gx-LAf"/>
+                            <constraint firstItem="z3v-k9-KnS" firstAttribute="centerX" secondItem="LYY-zA-QfX" secondAttribute="centerX" constant="-7" id="ZZm-7B-uC1"/>
+                            <constraint firstItem="wL5-on-wc2" firstAttribute="centerX" secondItem="LYY-zA-QfX" secondAttribute="centerX" id="gep-Q2-UUz"/>
+                            <constraint firstItem="LYY-zA-QfX" firstAttribute="top" secondItem="wL5-on-wc2" secondAttribute="bottom" constant="28" id="nkY-DY-EuP"/>
+                            <constraint firstItem="6rT-CA-v9N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="oGC-gw-f0R"/>
+                            <constraint firstItem="z3v-k9-KnS" firstAttribute="trailing" secondItem="wL5-on-wc2" secondAttribute="trailing" id="pae-tY-Nde"/>
+                            <constraint firstItem="LYY-zA-QfX" firstAttribute="leading" secondItem="IoR-vq-i4T" secondAttribute="leading" id="r2X-OV-fLy"/>
+                            <constraint firstItem="ClV-sB-Hlm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="vaa-9Y-6qK"/>
+                            <constraint firstItem="ClV-sB-Hlm" firstAttribute="centerX" secondItem="wL5-on-wc2" secondAttribute="centerX" id="z35-27-7Dc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ha" destination="LYY-zA-QfX" id="vP9-GE-8cM"/>
+                        <outlet property="pa" destination="IoR-vq-i4T" id="rmg-uy-F0n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="134" y="278"/>
         </scene>
     </scenes>
 </document>
